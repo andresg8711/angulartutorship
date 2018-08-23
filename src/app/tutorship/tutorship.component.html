@@ -1,0 +1,16 @@
+<h2>Tutores Disponibles</h2>
+<ul class="tutorships">
+    this.selectedTutorship = tutorship;
+    <li *ngFor="let tutorship of tutorships" [class.selected]="tutorship === selectedTutorship" (click)="onSelect(tutorship)"> <span class="badge">{{tutorship.id}}</span> {{tutorship.name}}
+    </li>
+</ul>
+<br>
+<div *ngIf="selectedTutorship">
+    <h2>{{selectedTutorship.name | uppercase}} Detalles</h2>
+    <div><span>id: </span>{{selectedTutorship.id}}</div>
+    <div>
+        <label>name:
+    <input [(ngModel)]="selectedTutorship.name" placeholder="name">
+  </label>
+    </div>
+</div>
