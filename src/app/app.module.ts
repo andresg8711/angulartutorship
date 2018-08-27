@@ -1,15 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TutorshipComponent } from './tutorship/tutorship.component';
-
-import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { TutorshipDetailComponent } from './tutorship-detail/tutorship-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TutorshipComponent
+    TutorshipComponent,
+    TutorshipDetailComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
