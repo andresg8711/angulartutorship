@@ -5,17 +5,21 @@ import { AppComponent } from './app.component';
 import { TutorshipComponent } from './tutorship/tutorship.component';
 import { TutorshipDetailComponent } from './tutorship-detail/tutorship-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TutorshipComponent,
     TutorshipDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,9 +1,10 @@
 <div *ngIf="tutorship">
-  <h2>{{tutorship.name | uppercase}} Detalles</h2>
-  <div><span>id: </span>{{tutorship.id}}</div>
-  <div>
-    <label>name:
+    <h2>{{tutorship.name | uppercase}} Detalles</h2>
+    <div><span>id: </span>{{tutorship.id}}</div>
+    <div>
+        <label>name:
       <input [(ngModel)]="tutorship.name" placeholder="name">
     </label>
-  </div>
+    </div>
+    <button (click)='goBack()'>go back</button>
 </div>

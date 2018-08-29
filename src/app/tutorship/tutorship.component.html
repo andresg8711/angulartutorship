@@ -1,8 +1,9 @@
 <h2>Tutores Disponibles</h2>
 <ul class="tutorships">
-    <li *ngFor="let tutorship of tutorships" [class.selected]="tutorship === selectedTutorship" (click)="onSelect(tutorship)"> <span class="badge">{{tutorship.id}}</span> {{tutorship.name}}
+    <li *ngFor="let tutorship of tutorships">
+        <a routerLink="/detail/{{tutorship.id}}">
+            <span class="badge">{{tutorship.id}}</span> {{tutorship.name}}
+        </a>
     </li>
 </ul>
 <br>
-
-<app-tutorship-detail [tutorship]="selectedTutorship"></app-tutorship-detail>
